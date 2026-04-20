@@ -1,0 +1,8 @@
+Size,Method,Time(ns),Found
+10000,Naive,810800,true
+10000,Fast,5000,true
+10000,Balanced,1559400,true
+Size,Method,Time(ns),Found
+10000,Naive,949900,true
+10000,Fast,7400,true
+10000,Balanced,2407300,true
