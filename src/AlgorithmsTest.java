@@ -37,10 +37,9 @@ public class AlgorithmsTest {
         assertNotEquals(hash1, hash2);
     }
 
-    // --- БЕНЧМАРКИ (За статтею викладача) ---
 
     @Test
-    @BenchmarkOptions(benchmarkRounds = 5, warmupRounds = 2) // 5 замірів, 2 "прогріви"
+    @BenchmarkOptions(benchmarkRounds = 5, warmupRounds = 2)
     public void benchmarkNaive() {
         Algorithms.hasDuplicateNaive(data);
     }
@@ -57,7 +56,6 @@ public class AlgorithmsTest {
         Algorithms.hasDuplicateBalanced(data);
     }
 
-    // Наш власний генератор масиву (без java.util)
     private int[] generateArray(int size) {
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
